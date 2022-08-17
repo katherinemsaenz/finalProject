@@ -60,4 +60,25 @@ extension ViewController4: UIPickerViewDelegate, UIPickerViewDataSource {
         answerField3.resignFirstResponder()
     }
     
+
+    
+    
+//
+//    static var aTotal = 0
+//    static var nTotal = 0
+//    static var dTotal = 0
+//
+    
+//    func checkAns(_ pickerView: UIPickerView){
+//        if pickerView == options[0]{
+//            aTotal = aTotal + 1
+//
+//        }else if pickerView == options[2]{
+//            dTotal = dTotal + 1
+//
+//        }else{
+//            nTotal = nTotal + 1
+//        }
+//}
+
 }
