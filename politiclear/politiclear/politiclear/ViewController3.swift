@@ -16,14 +16,28 @@ class ViewController3: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+    
+    @IBAction func breakingButton(_ sender: UIButton) {
+        if let url = URL(string: "https://nypost.com/news/") {
+          UIApplication.shared.open(url, options: [:], completionHandler: nil)
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        }
     }
-    */
+    
+    
+    @IBAction func breakingEducation(_ sender: UIButton) {
+        if let url = URL(string: "https://freebeacon.com/latest-news/minnesota-public-schools-changes-rules-to-lay-off-white-teachers-before-minority-teachers/") {
+          UIApplication.shared.open(url, options: [:], completionHandler: nil)
 
+        }
+    }
+    
+    
+    @IBAction func breakingImmigration(_ sender: UIButton) {
+        if let url = URL(string: "https://nypost.com/2022/08/07/mayor-eric-adams-greets-latest-border-crossers-in-nyc/") {
+          UIApplication.shared.open(url, options: [:], completionHandler: nil)
+
+        }
+    }
+    
 }

@@ -20,6 +20,72 @@ class ViewController6: UIViewController {
     @IBOutlet weak var answerField4: UITextField!
     
     
+    @IBAction func q7a(_ sender: Any) {
+        ViewController4.aTotal.append(" ")
+
+    }
+    
+    @IBAction func q7n(_ sender: Any) {
+        ViewController4.nTotal.append(" ")
+
+    }
+
+    @IBAction func q7d(_ sender: Any) {
+        ViewController4.dTotal.append(" ")
+
+    }
+    
+    @IBAction func q8a(_ sender: Any) {
+        ViewController4.aTotal.append(" ")
+
+    }
+    
+    @IBAction func q8n(_ sender: Any) {
+        ViewController4.nTotal.append(" ")
+
+    }
+    
+    
+    @IBAction func q8d(_ sender: Any) {
+        ViewController4.nTotal.append(" ")
+
+    }
+    
+    
+    @IBAction func q9a(_ sender: Any) {
+        ViewController4.aTotal.append(" ")
+
+    }
+    
+    @IBAction func q9n(_ sender: Any) {
+        ViewController4.nTotal.append(" ")
+
+    }
+    
+    
+    @IBAction func q9d(_ sender: Any) {
+        ViewController4.dTotal.append(" ")
+
+    }
+    
+    @IBAction func q10a(_ sender: Any) {
+        ViewController4.aTotal.append(" ")
+
+    }
+    
+    
+    @IBAction func q10n(_ sender: Any) {
+        ViewController4.nTotal.append(" ")
+
+    }
+    
+    @IBAction func q10d(_ sender: Any) {
+        ViewController4.dTotal.append(" ")
+
+    }
+    
+    
+    
     
     let options = ["Agree", "Neutral", "Disagree"]
     
@@ -28,46 +94,12 @@ class ViewController6: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pickerView.delegate = self
-        pickerView.dataSource = self
 
-        // Do any additional setup after loading the view.
-        answerField1.inputView = pickerView
-        answerField2.inputView = pickerView
-        answerTextField3.inputView = pickerView
-        answerField4.inputView = pickerView
+      
     
     }
     
 }
 
-extension ViewController6: UIPickerViewDelegate, UIPickerViewDataSource {
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return options.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent: Int) -> String? {
-        return options[row]
-        
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        answerField1.text = options[row]
-        answerField1.resignFirstResponder()
-        
-        answerField2.text = options[row]
-        answerField2.resignFirstResponder()
-        
-        answerTextField3.text = options[row]
-        answerTextField3.resignFirstResponder()
-        
-        answerField4.text = options[row]
-        answerField4.resignFirstResponder()
-    }
 
-}
+

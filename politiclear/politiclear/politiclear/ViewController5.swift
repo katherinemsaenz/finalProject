@@ -16,50 +16,68 @@ class ViewController5: UIViewController {
     
     @IBOutlet weak var answerText3: UITextField!
     
+    @IBAction func q4A(_ sender: Any) {
+        ViewController4.aTotal.append(" ")
+
+    }
+    
+    @IBAction func q4n(_ sender: Any) {
+        ViewController4.nTotal.append(" ")
+
+    }
+    
+    @IBAction func q4d(_ sender: Any) {
+        ViewController4.dTotal.append(" ")
+
+    }
+    
+    @IBAction func q5a(_ sender: Any) {
+        ViewController4.aTotal.append(" ")
+
+    }
+    
+    @IBAction func q5n(_ sender: Any) {
+        ViewController4.nTotal.append(" ")
+
+    }
+    
+    @IBAction func q5d(_ sender: Any) {
+        ViewController4.dTotal.append(" ")
+
+    }
+    
+    @IBAction func q6a(_ sender: Any) {
+        ViewController4.aTotal.append(" ")
+
+    }
+    
+    @IBAction func q6n(_ sender: Any) {
+        ViewController4.nTotal.append(" ")
+
+    }
+    
+    
+    @IBAction func q6d(_ sender: Any) {
+        ViewController4.dTotal.append(" ")
+
+    }
+    
+    
+    
+    
     
     let options = ["Agree", "Neutral", "Disagree"]
     
-    var pickerView = UIPickerView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        pickerView.delegate = self
-        pickerView.dataSource = self
 
         // Do any additional setup after loading the view.
-        answerText1.inputView = pickerView
-        answerText2.inputView = pickerView
-        answerText3.inputView = pickerView
+    
     
     }
     
 }
 
-extension ViewController5: UIPickerViewDelegate, UIPickerViewDataSource {
-    
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return options.count
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent: Int) -> String? {
-        return options[row]
-        
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        answerText1.text = options[row]
-        answerText1.resignFirstResponder()
-        
-        answerText2.text = options[row]
-        answerText2.resignFirstResponder()
-        
-        answerText3.text = options[row]
-        answerText3.resignFirstResponder()
-    }
 
-}
